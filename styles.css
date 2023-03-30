@@ -1,0 +1,229 @@
+:root{
+    --pink: hsl(322, 100%, 66%);
+    --very-pale-cyan: hsl(193, 100%, 96%);
+    --very-dark-cyan: hsl(192, 100%, 9%);
+    --grayish-blue: hsl(208, 11%, 55%);
+    --ff-body: 'Open Sans', sans-serif;
+    --ff-headings:  'Poppins', sans-serif;
+}
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    outline: 1px solid red;
+}
+
+body{
+    font-family: var(--ff-body);
+}
+
+.hero{
+    background-image: url('./images/bg-hero-mobile.svg');
+    background-color: var(--very-pale-cyan);
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 70px;
+}
+
+.container{
+    width: 90%;
+    max-width: 1200px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+.nav__logo{
+    display: block;
+    width: 130px;
+}
+
+.nav__cta{
+    text-decoration: none;
+    background-color: white;
+    padding: .3rem 1.2rem;
+    color: var(--very-dark-cyan);
+    font-weight: 700;
+    font-size: 14px;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px var(--grayish-blue);
+    margin-right: 5px;
+}
+
+.hero__main{
+    display: flex;
+    gap: 3rem;
+    flex-direction: column;
+    padding: 3rem 0;
+}
+
+.hero__texts{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.hero__title{
+    font-family: var(--ff-headings);
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.hero__paragraph{
+    margin: 0 auto;
+    line-height: 1.5;
+    width: 90%;
+    font-weight: 400;
+}
+
+.button{
+    display: inline-block;
+    background-color: var(--pink);
+    max-width: 500px;
+    padding: .8rem 5rem;
+    text-decoration: none;
+    color: var(--very-pale-cyan);
+    font-weight: 600;
+    border-radius: 30px;
+    box-shadow: 3px 5px 5px gainsboro;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.button:hover{
+    background-color: #ff9bdb;
+    box-shadow: none;
+    transition: all .2s;
+}
+
+.hero__img{
+    width: 100%;
+    max-width: 500px;
+    display: block;
+    margin: 0 auto;
+}
+
+/*Main*/
+
+.main{
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.section{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+    gap: 3rem;
+    width: 88%;
+    max-width: 500px;
+    box-shadow: 0 0 5px rgba(220, 220, 220, 0.712);
+    border-radius: 20px;
+}
+
+.section__img{
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 500px;
+}
+
+.section__texts{
+    text-align: center;
+}
+
+.section__title{
+    font-family: var(--ff-headings);
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: var(--very-dark-cyan);
+    font-size: 23px;
+}
+
+.section__paragraph{
+    color: var(--grayish-blue);
+    line-height: 1.5;
+}
+
+.email{
+    background-image: -moz-linear-gradient(
+        to top,
+        var(--very-dark-cyan) 50%,
+        #fff 50%
+    );
+    padding: 2rem 0;
+}
+
+.email__container{
+    width: 90%;
+    max-width: 500px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 2rem 1rem;
+    box-shadow: 0 0 5px rgba(220, 220, 220, 0.712);
+    border-radius: 20px;
+}
+
+.email__title{
+    font-size: 18px;
+    font-family: var(--ff-headings);
+    color: var(--very-dark-cyan);
+}
+
+.email__cta{
+    margin:0 auto;
+    padding: 1rem 1rem;
+    width: 80%;
+}
+
+/*FOOTER*/
+
+.footer{
+    background-color: var(--very-dark-cyan);
+    padding: 2rem 0;
+}
+
+.footer__container{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin: 0 auto;
+}
+
+.footer__figure{
+    display: block;
+    width: 100%;
+    max-width: 100px;
+}
+
+.footer__info{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: #fff;
+}
+
+.footer__article{
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.footer__logo{
+    display: block;
+}
